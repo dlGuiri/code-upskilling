@@ -1,3 +1,10 @@
 export default function Header() {
-    return <h1>Navbar goes here</h1>
+    return (
+        <header>
+            <nav>
+                <img src="/React Logo.jpg" alt="React Logo" width="50" className="logo"/>
+                <p className="header-text">React Facts</p>
+            </nav>
+        </header>
+    )
 }
