@@ -1,3 +1,54 @@
 * {
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width: 600px; /* Limits how wide the content can get */
+    margin-left: auto;  /* Centers the container horizontally */
+    margin-right: auto; /* Centers the container horizontally */
+    background-color: #282D35;
+    color: white;
+}
+
+header {
+  height: 90px;
+  background-color: #21222A;
+  padding: 30px 45px;
+}
+
+.header-text {
+  color: #61DAFB;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+nav {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 40px;
+}
+
+.main-container {
+    padding: 35px 45px; /* Adds space at the top and matches header side-padding */
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+li::marker {
+  color: #61DAFB;
+  font-size: 1.5rem;
+}
+
+.title-text {
+  margin-bottom: 35px;
+  font-size: 2.4rem;
 }

@@ -3,7 +3,7 @@ export default function Header() {
         <header>
             <nav>
                 <img src="/React Logo.jpg" alt="React Logo" width="50" className="logo"/>
-                <p className="header-text">React Facts</p>
+                <p className="header-text">ReactFacts</p>
             </nav>
         </header>
     )
