@@ -1,10 +1,8 @@
 export default function Header() {
-    return (
+    return(
         <header>
-            <nav>
-                <img src="/React Logo.jpg" alt="React Logo" width="50" className="logo"/>
-                <p className="header-text">ReactFacts</p>
-            </nav>
+            <img src="/Globe.png" alt="React Logo" className="logo"/>
+            <h1 class="title-text">my travel journal</h1>
         </header>
     )
 }

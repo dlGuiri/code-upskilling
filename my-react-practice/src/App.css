@@ -1,54 +1,50 @@
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: inter, sans-serif;
   box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    max-width: 600px; /* Limits how wide the content can get */
-    margin-left: auto;  /* Centers the container horizontally */
-    margin-right: auto; /* Centers the container horizontally */
-    background-color: #282D35;
-    color: white;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
 }
 
 header {
-  height: 90px;
-  background-color: #21222A;
-  padding: 30px 45px;
-}
-
-.header-text {
-  color: #61DAFB;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-nav {
   display: flex;
   gap: 10px;
-  height: 100%;
+  height: 55px;
   align-items: center;
+  justify-content: center;
+  background-color: #F55A5A;
+  padding: 10px;
 }
 
 .logo {
   width: auto;
-  height: 40px;
+  height: 20px;
 }
 
-.main-container {
-    padding: 35px 45px; /* Adds space at the top and matches header side-padding */
-}
-
-li {
-  margin-bottom: 15px;
-}
-
-li::marker {
-  color: #61DAFB;
-  font-size: 1.5rem;
+main {
+  padding: 50px 0 0 40px;
 }
 
 .title-text {
-  margin-bottom: 35px;
-  font-size: 2.4rem;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
+
+.entry-image {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+}
+
+.entry-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
