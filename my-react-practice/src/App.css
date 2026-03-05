@@ -8,7 +8,6 @@ body {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  color: white;
 }
 
 header {
@@ -27,12 +26,15 @@ header {
 }
 
 main {
+  display: flex;
   padding: 50px 0 0 40px;
+  gap: 10px;
 }
 
 .title-text {
   font-size: 0.875rem;
   font-weight: 500;
+  color: white;
 }
 
 .entry-image {
@@ -48,3 +50,16 @@ main {
   object-position: center;
 }
 
+.location {
+  height: 9.55px;
+  width: 7px;
+}
+
+.entry-content {
+  padding: 10px 5px;
+}
+
+.country, .map-link {
+  font-size: 0.64rem;
+  margin-left: 0.8em;
+}
