@@ -38,7 +38,7 @@ main {
 }
 
 .entry-image {
-  width: 125px;
+  min-width: 125px;
   height: 168px;
   overflow: hidden;
 }
@@ -62,4 +62,20 @@ main {
 .country, .map-link {
   font-size: 0.64rem;
   margin-left: 0.8em;
+}
+
+.place-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.2em;
+  margin-bottom: 0.8em;
+}
+
+.date {
+  font-size: 0.625rem;
+  font-weight: bold;
+}
+
+.place-description {
+  font-size: 0.625rem;
 }
