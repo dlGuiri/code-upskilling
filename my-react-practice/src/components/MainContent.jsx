@@ -1,16 +1,19 @@
-export default function MainContent() {
+export default function MainContent({img, title, country, googleMapsLink, dates, text}) {
+    const image_source = img.src;
+    const image_description = img.alt;
+
     return(
         <main>
             <div className="entry-image">
-                <img src="/Mountain.png" alt="Mountain Image" />
+                <img src={image_source} alt={image_description} />
             </div>
             <div className="entry-content">
                 <img src="/marker.png" alt="location marker" className="location"/>
-                <span className="country">Japan</span>
-                <a href="https://www.google.com/maps/place/Mount+Fuji/@35.3606421,138.7170637,15z/data=!3m1!4b1!4m6!3m5!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634!16zL20vMGNrczA?entry=ttu" className="map-link">View on Google Maps</a>
-                <p className="place-name">Mount Fuji</p>
-                <p className="date">12 Jan, 2021 - 24 Jan, 2021</p>
-                <p className="place-description">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+                <span className="country">{country}</span>
+                <a href={googleMapsLink} className="map-link">View on Google Maps</a>
+                <p className="place-name">{title}</p>
+                <p className="date">{dates}</p>
+                <p className="place-description">{text}</p>
             </div>        
         </main>
     )
